@@ -391,7 +391,7 @@ rdf = (function() {
   return rdf = _;
 })();
 
-if(module) module.exports = rdf; 
+try{ module.exports = rdf; } catch(e) { }
 
 /**
  * additions/misc
