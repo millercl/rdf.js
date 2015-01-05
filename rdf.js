@@ -1090,11 +1090,11 @@ try{ module.exports = rdf; } catch(e) { }
     output: function(o) {
       if(o.interfaceName == "NamedNode") { return this.shrink(o) }
       if(o.interfaceName == "Literal" && o.datatype) {
-        if(o.datatype.equals(this.context.resolve("xsd:integer"))) { return o.value }
-        if(o.datatype.equals(this.context.resolve("xsd:double"))) { return o.value }
-        if(o.datatype.equals(this.context.resolve("xsd:decimal"))) { return o.value }
-        if(o.datatype.equals(this.context.resolve("xsd:boolean"))) { return o.value }
-        return '"' + o.value + '"^^' + this.shrink(o.type);
+        if(o.datatype.equals(this.context.resolve("xsd:integer"))) { return o.nominalValue }
+        if(o.datatype.equals(this.context.resolve("xsd:double"))) { return o.nominalValue }
+        if(o.datatype.equals(this.context.resolve("xsd:decimal"))) { return o.nominalValue }
+        if(o.datatype.equals(this.context.resolve("xsd:boolean"))) { return o.nominalValue }
+        return '"' + o.nominalValue + '"^^' + this.shrink(o.type);
       }
       return o.toNT()
     },
