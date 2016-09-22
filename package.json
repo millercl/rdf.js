@@ -1,0 +1,27 @@
+{
+  "name": "rdf.js",
+  "version": "1.0.1",
+  "description": "RDF Tooling for ECMAScript V5 and Javascript",
+  "main": "rdf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/millercl/rdf.js.git"
+  },
+  "keywords": [
+    "rdf",
+    "rdf-interfaces",
+    "rdf.js"
+  ],
+  "author": "webr3 <nathan@webr3.org>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/millercl/rdf.js/issues"
+  },
+  "homepage": "https://github.com/millercl/rdf.js#readme"
+}
